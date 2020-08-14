@@ -25,14 +25,12 @@
         drawRow(data[i]);
       }
     }
-
     function drawRow(rowData) {
       var row = $("<tr />")
       $("#table-id").append(row);
       row.append($("<td>" + rowData.Perioden.substring(0, 4) + "</td>"));
       row.append($("<td>" + rowData.TotaleBevolking_1 + "</td>"));
     }
-
     $(function () {
       $.ajax({
         url: oDataUrl,
